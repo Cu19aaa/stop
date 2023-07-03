@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/login/styles.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/8c55396c00.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header class="l-header">
+    <nav class="nav bg-grid">
+        <div>
+            <a href="#" class="nav_logo">David</a>
+        </div>
+
+        <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                <li class="nav_item"><a href="#skills" class="nav_link">Skillls</a></li>
+                <li class="nav_item"><a href="#work" class="nav_link">Work</a></li>
+                <li class="nav_item"><a href="/Contact/contact.html" class="nav_link">Contact</a></li>
+                <li class="nav_item"><a href="/CV Folder/David Ugwu CV.pdf" class="nav_link">My CV</a></li>
+                <li><button class="btn"> <a href="/login/login.html">login</a>Login</button> </li>
+                <!--<a href="#" class="button">Login</a>-->
+            </ul>
+        </div>
+
+        <div class="nav_toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+
+  <div class="container">
+    <div class="form-box">
+      <h1 id="title">Sign Up</h1>
+      <form>
+        <div class="input-group">
+          <div class="input-field" id="nameField">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Name">
+          </div>
+          
+
+          <div class="input-field">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Email">
+          </div>
+
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password">
+          </div>
+          <p>Lost Password <a href="#">Click Here</a></p>
+        </div>
+        <div class="btn-field">
+          <button type="button" id="signupBtn">Sign up</button>
+          <button type="button" id="signinBtn" class="disable">Sign in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  
+
+  <script>
+
+    let signupBtn = document.getElementById("signupBtn");
+    let signinBtn = document.getElementById("signinBtn");
+    let nameField = document.getElementById("nameField");
+    let title = document.getElementById("title");
+
+    signinBtn.onclick = function(){
+      nameField.style.maxHeight = "0";
+      title.innerHTML = "Sign In";
+      signupBtn.classList.add("disable");
+      signinBtn.classList.remove("disable");
+    }
+
+    signupBtn.onclick = function(){
+      nameField.style.maxHeight = "60px";
+      title.innerHTML = "Sign Up";
+      signupBtn.classList.remove("disable");
+      signinBtn.classList.add("disable");
+    }
+
+
+
+  </script>
+    
+</body>
+</html>

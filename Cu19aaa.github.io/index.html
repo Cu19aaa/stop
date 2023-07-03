@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html And Css Crash Course</title>
+    <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="l-header">
+        <nav class="nav bg-grid">
+            <div>
+                <a href="#" class="nav_logo">David</a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link">Skillls</a></li>
+                    <li class="nav_item"><a href="#work" class="nav_link">Work</a></li>
+                    <li class="nav_item"><a href="/Contact/contact.html" target="_blank" class="nav_link">Contact</a></li>
+                    <li class="nav_item"><a href="/CV Folder/David Ugwu CV Final Draft.pdf" target="_blank" class="nav_link">My CV</a></li>
+                    <li><button class="btn"> <a href="/login/login.html" target="_blank">login</a>Login</button> </li>
+                    <!--<a href="#" class="button">Login</a>-->
+                </ul>
+            </div>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+        <!--==================== Home ===================-->
+        <section class="home bg-grid" id="home">
+
+            <div class="home_data">
+                <h1 class="home_title">Hi,<br>My name is <span class="home_title-color">David</span><br>I am a Web Developer in training<br>and this is my website portfolio</h1>
+                <a href="/Contact/contact.html" class="buttons">Contact</a>
+            </div>
+
+            <div class="home_social">
+                <a href="https://www.linkedin.com/in/david-ugwu-06503a14b/" target="blank" class="home_social-icon"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Cu19aaa" target="blank" class="home_social-icon"><i class="bx bxl-github"></i></a>
+            </div>
+            
+            <div class="home_img">
+                <img src="images/homes.png" alt="">
+            </div>
+        </section>
+        <!--================= About ==================-->
+        <section class="about section" id="about">
+            <h2 class="section_title">About</h2>
+
+            <div class="about_container bg-grid">
+                <div class="about_img">
+                    <img src="images/homes.png" alt="">
+                </div>
+                <div>
+                    <h2 class="about_subtitle">My name is <span class="home_title-color">David</span> </h2>
+                    <p class="about_text">I am a recent university graduate. I studied computer science with a focus is software engineering between 2019 and 2022 at the university of Hertfordshire and at the end of my program i came out with a 2.1. Upon finishing university and being faced with the job market i realised that due to the circumstance of the time during which i was at university i had failed to acquire any proper marketable job experience seeing as for the most of my university period i was in lockdown. On finishing i decided that web development and frontend development was the path i wanted to follow and as such i needed a plan to stick to. At the start of 2023 i signed up to a coding bootcamp which was from freeCodeCamp Academy which was what taught me the basics of web development and how to begin. After completing the bootcamp i went on to try challenges from the website frontend mentor, and most of the challenges i tried out are what are displayed on my portfolio. My HTML and CSS skills are at a comfortible 65% maybe 70% but im still learning everyday. My JavaScript is where i struggle a little bit sitting at a 10% however i am still in the early days of my career and im still growing and learning.Most of the work ive been doing are learning how to make landing pages and learning how to use css objects to properly style html pages. Ive also been learning how to make any website i make respond to the size of the screen it is viewed on(Device responsive websites)</p>
+                </div>
+            </div>
+        </section>
+        <!--=========== Skills =================-->
+        <section class="skills section" id="skills">
+            <h2 class="section_title">Skills</h2>
+
+            <div class="skills_container bg-grid">
+                <div>
+                    <h2 class="skills_subtitle">Professional Skills</h2>
+                    <p class="skills_text">This section is a breakdown of what level i think i am at skill wise if it was put into percentage. Please note that this is a personal assessment and not a reflection of any professional grading or grading system.</p>
+                    <div class="skills_data">
+                        <div class="skills_name">
+                            <div class="slidecontainer">
+                                <progress id="file" value="80" max="100"> 80% </progress>
+                                <p><i class="bx bxl-html5 skills_icon"></i> HTML </p>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_name">
+                            <div class="slidecontainer">
+                                <progress id="file" value="80" max="100"> 80% </progress>
+                                <p><i class="bx bxl-css3 skills_icon"></i> CSS </p>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_name">
+                            <div class="slidecontainer">
+                                <progress id="file" value="30" max="100"> 30% </progress>
+                                <p><i class="bx bxl-javascript skills_icon"></i>JavaScript</p>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_name">
+                            <div class="slidecontainer">
+                                <progress id="file" value="20" max="100"> 20% </progress>
+                                <p><i class="bx bxs-paint skills_icon"></i></i>UI/UX</p>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="images/skills.png" class="skills_img" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--============ Work =============-->
+        <section class="work section" id="work">
+            <h2 class="section_title">Work</h2>
+            <p class="work_text"> This section is a display of the works ive done in the process of learning web development <br>A lot of the work I have done while learning web development have been tasks from frontend mentor which are what are displayed here. </p>
+
+
+            <div class="work_container bg--grid">
+                <div class="image">
+                    <img class="image__img" src="/images/Landing Page With Alternating Block.jpg" alt="Bricks">
+                    <div class="image__overlay image__overlay--blur">
+                        <div class="image__title">Huddle Landing Page</div>
+                        <p class="image__description">
+                            Huddle-landing-Page-with- <br> Alternating-Feature-Block-Master</p>
+                        <button class="button"> <a href="https://github.com/Cu19aaa/Huddle-landing-Page-with-Alternating-Feature-Block-Master" target="_blank"> Click Here</a> </button>
+                    </div>
+                </div>
+    
+                <div class="image">
+                    <img class="image__img" src="/images/discord.jpg" alt="Bricks">
+                    <div class="image__overlay image__overlay--blur">
+                        <div class="image__title">Discord Clone</div>
+                        <p class="image__description">
+                            Clone for the social <br> media site discord(Still under development)
+                        </p>
+                        <button class="button"> <a href=https://github.com/Cu19aaa/discordclone target="_blank"> Click me</a> </button>
+                    </div>
+                </div>
+    
+                <div class="image">
+                    <img class="image__img" src="/images/Pricing card.jpg" alt="Bricks">
+                    <div class="image__overlay image__overlay--blur">
+                        <div class="image__title">Pricing Card(Frontend Mentor)</div>
+                        <p class="image__description">
+                            Pricing-Card-Frontend-Mentor-Challenge
+                        </p>
+                        <button class="button"> <a href="https://github.com/Cu19aaa/Pricing-Card-Frontend-Mentor-Challenge" target="_blank"> Click me</a> </button>
+                    </div>
+                </div>
+    
+                <div class="image">
+                    <img class="image__img" src="/images/CSS Chat Illustrator .jpg" alt="Bricks">
+                    <div class="image__overlay image__overlay--blur">
+                        <div class="image__title">CSS Chat Illustrator</div>
+                        <p class="image__description">
+                            Chat app CSS illustration
+                        </p>
+                        <button class="button"> <a href="https://github.com/Cu19aaa/css-chat-illustrator" target="_blank"> Click me</a> </button>
+                    </div>
+                </div>
+    
+                <div class="image">
+                    <img class="image__img" src="/images/Huddle Landing Page with curved section.jpg" alt="Bricks">
+                    <div class="image__overlay image__overlay--blur">
+                        <div class="image__title">Huddle Landing Page </div>
+                        <p class="image__description">
+                            Huddle landing page with curved sections
+                        </p>
+                        <button class="button"> <a href="https://github.com/Cu19aaa/huddle-landing-page-with-curved-sections" target="_blank"> Click me</a> </button>
+                    </div>
+                </div>
+    
+                <div class="image">
+                    <img class="image__img" src="/images/student debt calculator.jpg" alt="Bricks">
+                    <div class="image__overlay image__overlay--blur">
+                        <div class="image__title">Student debt repayment calculator</div>
+                        <p class="image__description">
+                            A loan repayment calculator which helps <br> users plan for paying up debt within <br> a set period of time giving a breakdown of how  <br>much will be paid to repay within goal time
+                        </p>
+                        <button class="button"> <a href="https://github.com/Cu19aaa/Final-Year-Project" target="_blank"> Click me</a> </button>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <img class="image__img" src="/images/Testimonial Grid Section.jpg" alt="Bricks">
+                    <div class="image__overlay image__overlay--blur">
+                        <div class="image__title">Testimonial Grid Section</div>
+                        <p class="image__description">
+                            Testimonials grid section
+                        </p>
+                        <button class="button"> <a href="https://github.com/Cu19aaa/testimonial-grid-section" target="_blank"> Click me</a> </button>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <img class="image__img" src="/images/Huddle Landing Pgae With Single Introductory Section.jpg" alt="Bricks">
+                    <div class="image__overlay image__overlay--blur">
+                        <div class="image__title">Huddle Landing Page</div>
+                        <p class="image__description">
+                            Huddle Landing Page With <br> Single Introductory Section
+                        </p>
+                        <button class="button"> <a href="https://github.com/Cu19aaa/Media-Responsive-Huddle-Landing-Page" target="_blank"> Click me</a> </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--================ Footer ================-->
+        <footer class="footer">
+            <p class="footer_title">David</p>
+            <div class="footer_social">
+                <a href="https://www.linkedin.com/in/david-ugwu-06503a14b/" target="blank" class="home_social-icon"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Cu19aaa" target="blank" class="home_social-icon"><i class="bx bxl-github"></i></a>
+            </div>
+            <p>&copy; 2023 copyright all rights reserved</p>
+        </footer>
+        
+    </main>
+
+    <!-- SCROLL REVAEL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- SCRIPT.JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
